@@ -1116,34 +1116,37 @@
           <h2 class="h2 article-title">Edu Journey</h2>
         </header>
 
-        <section class="projects">
+        <section class="edu-projects">
 
-          <ul class="filter-list">
+          <!-- Filter buttons -->
+          <ul class="edu-filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-edu-filter-btn>All</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Honors and Awards</button>
+              <button data-edu-filter-btn>Honors and Awards</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Certifications</button>
+              <button data-edu-filter-btn>Certifications</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Study Materials</button>
+              <button data-edu-filter-btn>Study Materials</button>
             </li>
 
             
 
           </ul>
+          
+          <!-- Dropdown (for mobile) -->
 
           <div class="filter-select-box">
 
-            <button class="filter-select" data-select>
+            <button class="filter-select" data-edu-select>
 
-              <div class="select-value" data-select-value>Select category</div>
+              <div class="select-value" data-edu-select-value>Select category</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -1151,22 +1154,22 @@
 
             </button>
 
-            <ul class="select-list">
+            <ul class="edu-select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-edu-select-item>All</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Honors and Awards</button>
+                <button data-edu-select-item>Honors and Awards</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Certifications</button>
+                <button data-edu-select-item>Certifications</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Study Materials</button>
+                <button data-edu-select-item>Study Materials</button>
               </li>
               
 
@@ -1174,11 +1177,11 @@
 
           </div>
           
-
-          <ul class="project-list">
+          <!-- Project list -->
+          <ul class="edu-project-list">
             
             <!-- Award 1 -->
-            <li class="project-item  active" data-filter-item data-category="honors and awards">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="honors and awards">
               <a href="#">
 
                 <figure class="project-img">
@@ -1196,7 +1199,8 @@
               </a>
             </li>
             <!-- Award 2 -->
-            <li class="project-item  active" data-filter-item data-category="honors and awards">
+             
+            <li class="edu-project-item  active" data-edu-filter-item data-category="honors and awards">
               <a href="#">
 
                 <figure class="project-img">
@@ -1215,7 +1219,7 @@
             </li>
 
             <!-- Study Material 1 -->
-            <li class="project-item active" data-filter-item data-category="study materials">
+            <li class="edu-project-item active" data-edu-filter-item data-category="study materials">
               <a href="https://designprinciplesandpractices.com/about/history/2022-conference" target="_blank">
 
                 <figure class="project-img">
@@ -1232,7 +1236,7 @@
               </a>
             </li>
             <!-- Certification 1 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="#">
 
                 <figure class="project-img">
@@ -1251,7 +1255,7 @@
             </li>
 
             <!-- Certification 2 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="https://coursera.org/verify/professional-cert/BKW021WNRV2W"  target="_blank">
 
                 <figure class="project-img">
@@ -1270,7 +1274,7 @@
             </li>
 
             <!-- Certification 3 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="https://coursera.org/verify/professional-cert/WDDGMKXKADDH"  target="_blank">
 
                 <figure class="project-img">
@@ -1288,7 +1292,7 @@
               </a>
             </li>
             <!-- Certification 4 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="https://coursera.org/verify/professional-cert/245RUXG0XJM9"  target="_blank">
 
                 <figure class="project-img">
@@ -1306,7 +1310,7 @@
               </a>
             </li>
             <!-- Certification 5 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="https://coursera.org/verify/SXMT5JKN90AB"  target="_blank">
 
                 <figure class="project-img">
@@ -1324,7 +1328,7 @@
               </a>
             </li>
             <!-- Certification 6 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="https://coursera.org/verify/69S6HJL1BP8X"  target="_blank">
 
                 <figure class="project-img">
@@ -1342,7 +1346,7 @@
               </a>
             </li>
             <!-- Certification 7 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="https://www.hackerrank.com/certificates/iframe/85e43bbf2762"  target="_blank">
 
                 <figure class="project-img">
@@ -1360,7 +1364,7 @@
               </a>
             </li>
             <!-- Certification 8 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="https://www.hackerrank.com/certificates/iframe/1249d06d794a"  target="_blank">
 
                 <figure class="project-img">
@@ -1378,7 +1382,7 @@
               </a>
             </li>
             <!-- Certification 9 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="#">
 
                 <figure class="project-img">
@@ -1396,7 +1400,7 @@
               </a>
             </li>
             <!-- Certification 10 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="#">
 
                 <figure class="project-img">
@@ -1414,7 +1418,7 @@
               </a>
             </li>
             <!-- Certification 11 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="#">
 
                 <figure class="project-img">
@@ -1432,7 +1436,7 @@
               </a>
             </li>
             <!-- Certification 12 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="#">
 
                 <figure class="project-img">
@@ -1451,7 +1455,7 @@
             </li>
 
             <!-- Certification 13 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="#">
 
                 <figure class="project-img">
@@ -1470,7 +1474,7 @@
             </li>
 
             <!-- Certification 14 -->
-            <li class="project-item  active" data-filter-item data-category="certifications">
+            <li class="edu-project-item  active" data-edu-filter-item data-category="certifications">
               <a href="#">
 
                 <figure class="project-img">

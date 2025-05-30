@@ -157,3 +157,52 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// === EDU JOURNEY FILTERING === //
+const eduSelect = document.querySelector("[data-edu-select]");
+const eduSelectItems = document.querySelectorAll("[data-edu-select-item]");
+const eduSelectValue = document.querySelector("[data-edu-select-value]");
+const eduFilterBtns = document.querySelectorAll("[data-edu-filter-btn]");
+const eduFilterItems = document.querySelectorAll("[data-edu-filter-item]");
+
+if (eduSelect) {
+  // Toggle dropdown
+  eduSelect.addEventListener("click", () => {
+    eduSelect.classList.toggle("active");
+  });
+
+  // Handle mobile dropdown select
+  eduSelectItems.forEach(item => {
+    item.addEventListener("click", () => {
+      const selected = item.innerText.toLowerCase().replace(/\s/g, '-');
+      eduSelectValue.innerText = item.innerText;
+      eduSelect.classList.remove("active");
+
+      eduFilterItems.forEach(project => {
+        const category = project.dataset.category.toLowerCase();
+        project.classList.toggle("active", selected === "all" || selected === category);
+      });
+
+      // Sync with buttons
+      eduFilterBtns.forEach(btn => btn.classList.remove("active"));
+    });
+  });
+
+  // Handle desktop filter buttons
+  let lastEduBtn = eduFilterBtns[0];
+  eduFilterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const selected = btn.innerText.toLowerCase().replace(/\s/g, '-');
+      eduSelectValue.innerText = btn.innerText;
+
+      eduFilterItems.forEach(project => {
+        const category = project.dataset.category.toLowerCase();
+        project.classList.toggle("active", selected === "all" || selected === category);
+      });
+
+      lastEduBtn.classList.remove("active");
+      btn.classList.add("active");
+      lastEduBtn = btn;
+    });
+  });
+}

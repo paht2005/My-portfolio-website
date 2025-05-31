@@ -1880,3 +1880,41 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+.project-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-item-icon-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 2;
+}
+
+.project-img:hover .project-item-icon-box {
+  opacity: 1;
+}
+
+.project-item-icon-box ion-icon {
+  font-size: 20px;
+  color: #FFD700;
+  margin-bottom: 4px;
+}
+
+.tooltip-text {
+  font-size: 11px;
+  color: #fff;
+  white-space: nowrap;
+}
